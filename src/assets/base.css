@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "EBGaramond";
+    src: url("fonts/EBGaramond-Regular.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt\,wght.ttf") format("ttf");
+}

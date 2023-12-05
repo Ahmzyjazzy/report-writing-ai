@@ -1,0 +1,29 @@
+@import './base.css';
+
+.text-container {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #333;
+}
+
+.cursor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 30px;
+    background-color: #333;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
