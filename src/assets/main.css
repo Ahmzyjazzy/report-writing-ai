@@ -2,8 +2,6 @@
 
 .text-container {
     position: relative;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
     color: #333;
 }
 
@@ -11,9 +9,9 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 10px;
-    height: 30px;
-    background-color: #333;
+    width: 5px;
+    height: 20px;
+    background-color: #ccc;
     animation: blink 0.8s infinite;
 }
 

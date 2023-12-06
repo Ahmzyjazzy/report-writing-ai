@@ -19,17 +19,20 @@ export const useResearchStore = defineStore('research', () => {
         index++;
 
         if (index < textToWrite.length) {
-            setTimeout(writeText(textElement, textToWrite, cursorElement, index), 50);
+            setTimeout(writeText(textElement, textToWrite, cursorElement, index), 60000);
         } else {
             cursorElement.style.display = "none";
         }
     }
 
-    function fetchAbstract(textElem, text, cursorElement) {
+    function fetchAbstract() {
+        if (!projectTopic.value) return alert('Enter project topic')
+
+        responseTextAbstract.value = ''
         loading.value = true
 
         const prompt = `
-        Generate a profession abstract for a final year student report on the project topic "${text}"
+        Generate a profession abstract for a final year student report on the project topic "${projectTopic.value}"
         The Abstract should be written in markdown format
         ###
         Title: Implementation of Biometric Login for Exam in Tertiary School
